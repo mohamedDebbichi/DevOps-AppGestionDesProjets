@@ -30,6 +30,7 @@ pipeline {
             }
         }
         
+        /**
         stage('Build Frontend') {
             steps {
                 dir('frontend') {
@@ -38,6 +39,7 @@ pipeline {
                 }
             }
         }
+    */
         
         stage('Archive') {
             steps {
