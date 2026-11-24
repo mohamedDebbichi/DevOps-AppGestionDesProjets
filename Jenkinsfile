@@ -45,6 +45,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Build Docker Image') {
+            steps {
+                dir('backend') {
+                    sh 'docker build -t backend-app:latest .'
+                }
+            }
+        }
         
         /**
         stage('Build Frontend') {
